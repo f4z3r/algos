@@ -1,4 +1,4 @@
-//! Implementation of merge sort algorithm.
+//! Implementation of merge sort algorithm. Merge sort has O(n lg n) time complexity.
 
 fn sort<T>(vec: &mut Vec<T>) where T: PartialOrd + Clone {
     let length = vec.len();
