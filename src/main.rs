@@ -4,6 +4,7 @@
 extern crate rand;
 
 mod genetic;
+mod merge_sort;
 
 fn main() {
     let num_bits = 64_usize;
