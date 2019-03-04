@@ -19,3 +19,8 @@ matrix:
       rust: stable
       before_script:
         - cd mergesort
+    - name: gray wolf
+      language: perl6
+      perl6: "2018.10"
+      before_script:
+        - cd gray_wolf
