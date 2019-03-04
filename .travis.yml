@@ -1,3 +1,21 @@
 dist: trusty
-language: rust
-rust: stable
+branches:
+  only:
+    - master
+matrix:
+  include:
+    - name: genetic
+      language: rust
+      rust: stable
+      before_script:
+        - cd genetic
+    - name: quicksort
+      language: rust
+      rust: stable
+      before_script:
+        - cd quicksort
+    - name: mergesort
+      language: rust
+      rust: stable
+      before_script:
+        - cd mergesort

@@ -1,6 +1,10 @@
-/target
+**/target
 **/*.rs.bk
-
 
 # OS X
 .DS_Store
+
+# transitory files
+.#*
+*.swp
+

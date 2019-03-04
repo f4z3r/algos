@@ -1,7 +1,6 @@
 //! Quicksort implementation. O(n lg n) time.
 
-
-fn sort<T>(vec: &mut Vec<T>) where T: PartialOrd {
+pub fn sort<T>(vec: &mut Vec<T>) where T: PartialOrd {
     let length = vec.len();
     if length < 2 {
         return;

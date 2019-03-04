@@ -4,7 +4,8 @@
 
 #![allow(unused_assignments)]
 
-use rand;
+extern crate rand;
+
 use rand::Rng;
 
 /// Run the algorithm.

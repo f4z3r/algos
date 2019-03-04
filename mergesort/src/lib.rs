@@ -1,6 +1,8 @@
 //! Implementation of merge sort algorithm. Merge sort has O(n lg n) time complexity.
 
-fn sort<T>(vec: &mut Vec<T>) where T: PartialOrd + Clone {
+#![allow(unused_assignments)]
+
+pub fn sort<T>(vec: &mut Vec<T>) where T: PartialOrd + Clone {
     let length = vec.len();
     let mut copy = vec.to_vec();
     split_merge_sort(&mut copy, vec, 0, length);
