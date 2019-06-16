@@ -1,7 +1,7 @@
 #!/usr/bin/env perl6
 
-use strict;
 use v6.c;
+use strict;
 
 unit module GWO;
 
