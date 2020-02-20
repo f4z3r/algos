@@ -1,9 +1,11 @@
 [workspace]
 members = ["sorting/quicksort",
            "sorting/mergesort",
+           "searching/linear_search",
            "misc/genetic"]
 default-members = ["sorting/quicksort",
                    "sorting/mergesort",
+                   "searching/linear_search",
                    "misc/genetic"]
 
 [[test]]
@@ -17,6 +19,10 @@ path = "sorting/quicksort/src/lib.rs"
 [[test]]
 name = "genetic"
 path = "misc/genetic/src/lib.rs"
+
+[[test]]
+name = "linear_search"
+path = "searching/linear_search/src/lib.rs"
 
 
 [package]
