@@ -1,0 +1,27 @@
+[workspace]
+members = ["sorting/quicksort",
+           "sorting/mergesort",
+           "misc/genetic"]
+default-members = ["sorting/quicksort",
+                   "sorting/mergesort",
+                   "misc/genetic"]
+
+[[test]]
+name = "mergesort"
+path = "sorting/mergesort/src/lib.rs"
+
+[[test]]
+name = "quicksort"
+path = "sorting/quicksort/src/lib.rs"
+
+[[test]]
+name = "genetic"
+path = "misc/genetic/src/lib.rs"
+
+
+[package]
+name = "algos"
+version = "0.1.0"
+authors = ["Jakob Beckmann <beckmann_jakob@hotmail.fr>"]
+
+[dependencies]

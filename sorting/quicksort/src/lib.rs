@@ -1,5 +1,15 @@
-//! Quicksort implementation. O(n lg n) time.
+//! Quicksort implementation. O(n lg n) time complexity.
 
+/// Sort a generic vector in place using quicksort.
+///
+/// ## Example
+///
+/// ```rust
+/// use quicksort;
+/// let mut vec = vec![1, 5, 4, 3, 2, 0, 1, -10];
+/// quicksort::sort(&mut vec);
+/// assert_eq!(vec, vec![-10, 0, 1, 1, 2, 3, 4, 5]);
+/// ```
 pub fn sort<T>(vec: &mut Vec<T>) where T: PartialOrd {
     let length = vec.len();
     if length < 2 {
@@ -37,23 +47,35 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_algo() {
+    fn test_quicksort_ints() {
         let mut vec = vec![1, 5, 4, 3, 2, 0];
         sort(&mut vec);
         assert_eq!(vec, vec![0, 1, 2, 3, 4, 5]);
-
+    }
+    
+    #[test]
+    fn test_quicksort_chars() {
         let mut vec = vec!['b', 'c', 'e', 'a', 'y'];
         sort(&mut vec);
         assert_eq!(vec, vec!['a', 'b', 'c', 'e', 'y']);
+    }
 
+    #[test]
+    fn test_quicksort_duplicates() {
         let mut vec = vec![1, -1, 1, -1, 1, -1, 1, -1];
         sort(&mut vec);
         assert_eq!(vec, vec![-1, -1, -1, -1, 1, 1, 1, 1]);
+    }
 
+    #[test]
+    fn test_quicksort_singleton() {
         let mut vec = vec![1];
         sort(&mut vec);
         assert_eq!(vec, vec![1]);
+    }
 
+    #[test]
+    fn test_quicksort_empty() {
         let mut vec: Vec<bool> = Vec::new();
         sort(&mut vec);
         assert_eq!(vec, Vec::<bool>::new());

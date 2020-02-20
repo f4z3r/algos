@@ -1,26 +1,7 @@
+---
 dist: trusty
 branches:
   only:
     - master
-matrix:
-  include:
-    - name: genetic
-      language: rust
-      rust: stable
-      before_script:
-        - cd genetic
-    - name: quicksort
-      language: rust
-      rust: stable
-      before_script:
-        - cd quicksort
-    - name: mergesort
-      language: rust
-      rust: stable
-      before_script:
-        - cd mergesort
-    - name: gray wolf
-      language: perl6
-      perl6: "2018.10"
-      before_script:
-        - cd gray_wolf
+language: rust
+rust: stable
