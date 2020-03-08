@@ -10,7 +10,7 @@
 /// assert_eq!(linear_search::search(&-1, &vec), Some(3));
 /// assert_eq!(linear_search::search(&10, &vec), None);
 /// ```
-pub fn search<T>(element: &T, vec: &Vec<T>) -> Option<usize> where T: Eq {
+pub fn search<T>(element: &T, vec: &[T]) -> Option<usize> where T: Eq {
     for (idx, item) in vec.iter().enumerate() {
         if item == element {
             return Some(idx);

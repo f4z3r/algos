@@ -2,10 +2,12 @@
 members = ["sorting/quicksort",
            "sorting/mergesort",
            "searching/linear_search",
+           "searching/binary_search",
            "misc/genetic"]
 default-members = ["sorting/quicksort",
                    "sorting/mergesort",
                    "searching/linear_search",
+                   "searching/binary_search",
                    "misc/genetic"]
 
 [[test]]
@@ -23,6 +25,10 @@ path = "misc/genetic/src/lib.rs"
 [[test]]
 name = "linear_search"
 path = "searching/linear_search/src/lib.rs"
+
+[[test]]
+name = "binary_search"
+path = "searching/binary_search/src/lib.rs"
 
 
 [package]

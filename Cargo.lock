@@ -5,6 +5,10 @@ name = "algos"
 version = "0.1.0"
 
 [[package]]
+name = "binary_search"
+version = "0.1.0"
+
+[[package]]
 name = "c2-chacha"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
